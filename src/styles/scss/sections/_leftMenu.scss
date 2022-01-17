@@ -1,0 +1,45 @@
+.leftMenu{
+    width: 320px;
+    background-color: $white;
+    display: flex;
+    justify-content: flex-end;
+    .soonIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+        visibility: hidden;
+    }
+    &__content{
+        font-family: DIN Pro;
+        padding: 0 40px 0 0;
+    }
+    &__contentLogo{
+        border-bottom: 0.5px solid $gray;
+        padding: 0 0 30px 0;
+    }
+    &__list{
+        padding: 30px 0 0 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__listItem{
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 60px;
+    }
+    &__listItem:hover{
+        transition: 0.15s;
+        color: $orange;
+    }
+    &__listItemImg{
+        padding: 0 20px 0 0;
+    }
+    &__listItemImg--soonIcon{
+        .soonIcon{
+            visibility: visible;
+        }
+    }
+    
+}

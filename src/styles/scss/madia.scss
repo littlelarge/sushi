@@ -1,0 +1,17 @@
+@media screen and (min-width: 280px) {
+    
+}
+@media screen and (min-width: 1870px) {
+    .offers{
+        .slide{
+            .carousel-control-prev{
+                transform: translate(-90%, 115%) !important;
+                height: 30%;
+            }
+            .carousel-control-next{
+                transform: translate(90%, 115%) !important;
+                height: 30%;
+            }
+        }
+    }
+}

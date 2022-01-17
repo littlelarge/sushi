@@ -1,0 +1,98 @@
+.header{
+    width: 100%;
+    border-bottom: 0.5px solid $gray;
+    .orange--fill{
+        color: $orange;
+    }
+    &__infoWorkTime{
+        display: flex;
+    }
+    &__content{
+        display: flex;
+    }
+    &__contentItem{
+        font-family: DIN Pro;
+    }
+    &__contentItem:first-child{
+        border-right: 0.5px solid $gray;
+        padding: 8px 18px;
+        width: 220px;
+    }
+    &__contentItem:last-child{
+        display: flex;
+        flex-grow: 1;
+    }
+    &__contentItemSubItem{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        p{
+            font-size: 1.125rem;
+            line-height: 1.395rem;
+            color: $gray;
+            padding: 0 10px;
+        }
+    }
+    &__contentItemSubItem:first-child{
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        p:last-child{
+            color: $black;
+        }
+    }
+    &__contentItemSubItem:last-child{
+        justify-content: flex-end;
+        p{
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        p:hover{
+            transition: 0.15s;
+            color: $orange;
+        }
+    }
+    &__infoList{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 5px 0;
+    }
+    &__infoListItem:first-child{
+        font-size: 1.125rem;
+        line-height: 1.39625rem;
+        font-weight: 500;
+    }
+    &__infoListItem{
+        font-family: DIN Pro;
+        font-size: 1.125rem;
+        line-height: 1.125rem;
+        font-weight: 500;
+    }
+    &__infoWorkTime{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            P{
+                font-family: DIN Pro;
+                font-weight: 500;
+                font-size: .8125rem;
+                line-height: 1.08375rem;
+                color: $gray;
+            }
+    }
+    &__infoTimeLogo{
+        padding: 0 5px 0 0;
+    }
+    &__contentItemSubItemBtn{
+        width: 94px;
+        height: 100%;
+    }
+    &__contentItemSubItemBtn:hover{
+        path{
+            fill: $orange;
+        }
+    }
+}

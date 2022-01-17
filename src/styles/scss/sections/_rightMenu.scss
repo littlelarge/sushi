@@ -1,0 +1,98 @@
+.rightMenu{
+    width: 430px;
+    background-color: $white;
+    font-family: Din Pro;
+    padding: 55px 0 0 40px;
+    &__content{
+        width: 290px;
+    }
+    &__contentItem{
+        background-color: $mainBgColor;
+        h4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $black;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 1.86125rem;
+        }
+        h5{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $gray;
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 1.395rem;
+        }
+    }
+    &__contentItem:first-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 20px 0;
+        .rightMenu__contentItemSubItem:first-child{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            h4{
+                padding: 12px 0 10px 0;
+            }
+            h5{
+                padding: 0 0 26px 0;
+            }  
+        }
+        .rightMenu__contentItemSubItem:last-child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: stretch;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: $orange;
+            padding: 12px 0;
+            p{
+                color: $white;
+                font-weight: 400;
+                font-size: .875rem;
+                line-height: 1.085rem;
+            }
+        }
+    }
+    &__contentItem:last-child{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        .rightMenu__contentItemSubItemLocationMarkupBtn{
+            position: absolute;
+            left: calc(50% - 30px);
+            bottom: 0;
+            transform: translate(0, 50%);
+
+        }
+        .rightMenu__contentItemSubItemLocationMarkupBtn:hover{
+            .orange--fill{
+                fill: $orange;
+            }
+            .white--fill{
+                fill: $white;
+            }
+        }
+        .rightMenu__contentItemSubItem:first-child{
+            position: relative;
+            .mapImg{
+                background-color: red;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+        }
+        .rightMenu__contentItemSubItem:last-child{
+            h4{
+                padding: 38px 0 10px 0;
+            }
+            h5{
+                padding: 0 0 7px 0;
+            }  
+        }
+    }
+}

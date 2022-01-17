@@ -1,0 +1,75 @@
+@import './base/variables';
+@import './base/reset';
+@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+.orange--fill{
+    color: $orange;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: $mainBgColor;
+    display: flex;
+    .leftMenu{
+    }
+    .general{
+        flex-grow: 1;
+    }
+    .rightMenu{
+    }
+}
+
+a {
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+button:hover{
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    &::placeholder{
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container--header {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@import './sections/leftMenu';
+@import './sections/rightMenu';
+@import './sections/header';
+@import './sections/offers';
+@import './sections/_aboutUs';
+@import './sections/_footer';
+@import './madia';

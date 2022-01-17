@@ -1,0 +1,308 @@
+.offers{
+    .price--crossedOut{
+    }
+    .carousel-dark .carousel-indicators [data-bs-target]{
+    background-color: $orange;
+    }
+    .carousel:first-child{
+        margin: 30px 0 0 0;
+        .carousel-control-next{
+            display: none;
+        }
+        .carousel-control-prev{
+            display: none;
+        }
+        .carousel-indicators{
+            transform: translate(0, 170%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button{
+                width: 8px;
+                height: 8px;
+                border-radius: 100%;
+                margin: 0 6px;
+            }
+            .active{
+                width: 12px;
+                height: 12px;
+            }
+        }
+        .carousel-item{
+            position: relative;
+            width: 920px;
+            height: 517.5px;
+            background-color: $white;
+            .carousel-item-img{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 82.61%;
+            }
+            .offers__product{
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+    .carousel:last-child{
+        display: flex;
+        align-items: center;
+        .carousel-control-next{
+            height: 30%;
+            transform: translate(0, 115%);
+            span{
+                img{
+                    transform: translate(10%, 0);
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+                background: $codGray;
+            }
+        }
+        .carousel-control-prev{
+            transform: translate(0, 115%);
+            height: 30%;
+            span{
+                img{
+                    transform: translate(-10%, 0);
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+                background: $codGray;
+            }
+        }
+    }
+    &__product{
+        background-color: transparent;
+        z-index: 0;
+        padding: 0 20px 0 0;
+        //margin: 30px 0 0 0;
+        height: 517px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__productImg{
+        position: absolute;
+        bottom: 0; 
+        left: 0;
+        width: 90%;
+        z-index: 0;
+    }
+    &__productInfo{
+        z-index: 1;
+        padding: 30px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        align-self: flex-end;
+        font-family: Din Pro;
+        .offers__productName{
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 0 0 5px 0;
+        }
+    }
+    &__productPrice{
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        align-self: flex-end;
+        font-family: Din Pro;
+        font-weight: 700;
+        .offers__productPriceOldPrice{
+            z-index: 0;
+            font-size: 1.3rem;
+            margin: 0 0 15px 0;
+        }
+        .offers__productPriceCurrentPrice{
+            font-size: 2rem;
+        }
+    }
+    &__productBtn{
+        z-index: 1;
+        align-self: flex-end;
+        font-family: Din Pro;
+        color: $white;
+        font-size: 1.75rem;
+        padding: 15px 95px;
+        margin: 0 10px 20px 0;
+        border-radius: 4px;
+        background-color: $darkOrange;
+    }
+    &__productBtn:hover{
+        color: $darkOrange;
+        background-color: $white;
+    }
+    &__sliderValue{
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        circle:hover{
+            transition: 0.15s;
+            fill: $orange;
+        }
+    }
+    .catalog{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0 20px 0;
+        &__content{
+            width: 100%;
+            position: relative;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-areas: 
+            'one one two three'
+            'four four five five';
+            &-item{
+                display: flex;
+                align-items: flex-end;
+                position: relative;
+                min-height: 200px;
+                img{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+                p{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    font-family: Din Pro;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    line-height: 1.86125rem;
+                    z-index: 1;
+                    color: $white;
+                    padding: 0 0 10px 10px;
+                }
+            }
+            &-item:hover{
+                p{
+                    transition: 0.30s;
+                    font-size: 1.875rem;
+                }
+            }
+        }
+        &__content-item:nth-child(1){
+            grid-area: one;
+        }
+        &__content-item:nth-child(2){
+            grid-area: two;
+        }
+        &__content-item:nth-child(3){
+            grid-area: three;
+            
+        }
+        &__content-item:nth-child(4){
+            grid-area: four;
+            
+        }
+        &__content-item:nth-child(5){
+            grid-area: five;
+        }
+    }
+    .novelty{
+        padding: 0 0 50px 0;
+        &__content{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__contentItem{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 386px;
+            width: 290px;
+            background-color: $white;
+            font-family: Din Pro;
+        }
+        &__contentItemSubItem{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            img{
+                align-self: center;
+            }
+        }
+        &__contentItemSubItem:first-child{
+            flex-grow: 1;
+            h4{
+                padding: 0 0 0 20px;
+                font-size: 1.5rem;
+                line-height: 1.86125rem;
+                font-weight: 700;
+                width: 75.86%;
+            }
+            p{
+                color: $gray;
+                font-size: 1.125rem;
+                line-height: 1.395rem;
+                font-weight: 400;
+                padding: 0 0 20px 20px;
+            }
+        }
+        &__contentItemSubItem:last-child{
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 15px 0;
+            border-top: 0.5px solid $gray;
+            p{
+                font-weight: 700;
+                font-size: 1.5rem;
+                line-height: 1.878125rem;
+            }
+            button{
+                font-size: 1.5rem;
+                line-height: 1.86125rem;
+                font-weight: 500;
+                background-color: $darkOrange;
+                color: $white;
+                padding: 5px 42px;
+                border-radius: 5px;
+            }
+            button:hover{
+                color: $darkOrange;
+                background-color: $white;
+            }
+        }
+        &__buttons{
+            font-family: Din Pro;
+            color: $black;
+            font-size: 1.5rem;
+            line-height: 1.86125rem;
+            button{
+                padding: 10px 20px;
+                margin: 0 0 20px 0;
+                span{
+                    font-weight: 700;
+                }
+            }
+            button:last-child{
+                span{
+                    padding: 0 0 4px 0;
+                    border-bottom: 2px solid $gray;
+                    color: $gray;
+                }
+            }            
+        }
+    }
+}
